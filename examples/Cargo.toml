@@ -1,0 +1,40 @@
+[package]
+name = "rust-ai-toolkit-examples"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[[example]]
+name = "basic_usage"
+path = "basic_usage.rs"
+
+[[example]]
+name = "custom_template"
+path = "custom_template.rs"
+
+[[example]]
+name = "streaming_responses"
+path = "streaming_responses.rs"
+
+[[example]]
+name = "rate_limit_handling"
+path = "rate_limit_handling.rs"
+
+[[example]]
+name = "custom_ai_client"
+path = "custom_ai_client.rs"
+
+[dependencies]
+rust-ai-toolkit = { path = ".." }
+tokio = { version = "1.32.0", features = ["full"] }
+dotenv = "0.15.0"
+env_logger = "0.10.0"
+log = "0.4.20"
+serde = { version = "1.0.188", features = ["derive"] }
+serde_json = "1.0.107"
+async-trait = "0.1.73"
+futures = "0.3.28"
+chrono = "0.4.31"
+rand = "0.8.5"
+indicatif = "0.17.7"
+colored = "2.0.4" 
